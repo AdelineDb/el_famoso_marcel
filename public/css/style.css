@@ -109,19 +109,11 @@ g.titreCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 30px;
+    margin: 40px 30px;
 }
 
 .block_cards1 img {
     margin-bottom: 20px;
-}
-
-.hoverimg {
-    display: none;
-}
-
-#hoverimg1 #image{
-    display: block;
 }
 
 .textcenter > span {

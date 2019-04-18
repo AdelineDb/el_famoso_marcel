@@ -29,26 +29,16 @@ session_start();
     <?php foreach ($eggs as $egg => $value) { ?>
 
         <?php
-        if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bf5' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
+        if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
             $eggs[$egg]['id'] == '5cac51240d488f0da6151be0' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf3' ||
             $eggs[$egg]['id'] == '5cac51240d488f0da6151c09' || $eggs[$egg]['id'] == '5cac51240d488f0da6151be6' ||
             $eggs[$egg]['id'] == '5cac51240d488f0da6151bcd' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bd1' ||
             $eggs[$egg]['id'] == '5cac51240d488f0da6151c14' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bde' ||
             $eggs[$egg]['id'] == '5cac51240d488f0da6151bd3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bdf' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bed') {
+            $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf5') {
             ?>
             <div class="block_cards1">
-            <?php if ($eggs[$egg]['id'] == "5cac51240d488f0da6151be6" || $eggs[$egg]['id'] == "5cac51240d488f0da6151bed"
-                || $eggs[$egg]['id'] == "5cac51240d488f0da6151bde" || $eggs[$egg]['id'] == "5cac51240d488f0da6151c14") {
-                ?>
-                <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
-                <div id="hoverimg1">
-                    <div id="image" style="background: url('/img/oeufmystèrev1.jpg') no-repeat; width: 200px; height: 220px; padding-top: 8px; margin-bottom: 15px; background-size: contain;"></div>
-                </div>
-            <?php } else { ?>
-                <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
-            }
-            ?>
+                <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
                 <div class="textcenter">
                     <span> <?php echo $eggs[$egg]['name']; ?> </span>
                     <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
