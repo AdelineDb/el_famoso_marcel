@@ -11,6 +11,3 @@ $char = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/ch
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-
-<h1>EASTER COOK FOR THE QUEEN</h1>

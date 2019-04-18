@@ -1,19 +1,19 @@
 /*----------------GENERAL------------------*/
-h1{
+h1 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 4em;
     text-align: center;
     color: #4C230A;
 }
 
-h2{
+h2 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 2.5em;
     text-align: center;
     color: #4C230A;
 }
 
-p,span{
+p, span {
     font-family: 'Cabin Sketch', cursive;
     font-size: 1.5em;
     color: #4C230A;
@@ -22,16 +22,16 @@ p,span{
 /*----------------INDEX------------------*/
 
 
-
 /*----------------CHARACTERES------------------*/
 
 
-
 /*----------------OEUFS------------------*/
+
 .containerEggs {
     width: 100vw;
-    color: #FFD387;
+    background-color: #FFD387;
 }
+
 
 /*----------------FIN1------------------*/
 
