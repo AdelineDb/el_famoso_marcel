@@ -65,8 +65,21 @@ button{
 /*----------------OEUFS------------------*/
 
 .containerEggs {
-    width: 100vw;
     background-color: #FFD387;
+    border: 1px solid red;
+}
+
+.allTheCards1{
+    border: 1px solid blue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.block_cards1{
+    border: 1px solid green;
 }
 
 
