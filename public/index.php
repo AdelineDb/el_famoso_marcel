@@ -1,4 +1,5 @@
 <?php
+
 $egg = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 echo '<pre>';
 var_dump($egg);
