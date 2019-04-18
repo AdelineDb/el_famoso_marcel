@@ -1,14 +1,14 @@
 <?php
+session_start();
 
 require '_head.php';
 include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
+$characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
 
-session_start();
-//var_dump($_SESSION['hero']);
+var_dump($_SESSION['hero']); ?>
 
-?>
 
 
 <body class="containerEggs">
@@ -17,9 +17,22 @@ session_start();
 
 <h2>Maintenant crée ton oeuf parfait pour la reine</h2>
 
-<div class="cardjoueur">
-    <p>Card du guerrier</p>
-</div>
+<?php foreach ($characters as $key => $character)
+{
+    if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
+
+        <div class="block_cards">
+
+            <img src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
+
+            <div class="">
+                <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
+                <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+            </div>
+
+        </div>
+
+    <?php }} ?>
 
 <div class="allTheCards1">
     <?php foreach ($eggs as $egg => $value) { ?>
@@ -34,22 +47,22 @@ session_start();
             $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bed') {
             ?>
             <div class="block_cards1">
-            <?php if ($eggs[$egg]['id'] == "5cac51240d488f0da6151be6" || $eggs[$egg]['id'] == "5cac51240d488f0da6151bed"
-                || $eggs[$egg]['id'] == "5cac51240d488f0da6151bde" || $eggs[$egg]['id'] == "5cac51240d488f0da6151c14") {
+                <?php if ($eggs[$egg]['id'] == "5cac51240d488f0da6151be6" || $eggs[$egg]['id'] == "5cac51240d488f0da6151bed"
+                    || $eggs[$egg]['id'] == "5cac51240d488f0da6151bde" || $eggs[$egg]['id'] == "5cac51240d488f0da6151c14") {
+                    ?>
+                    <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
+                    <div class="hoverimg1"></div>
+                <?php } else { ?>
+                    <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
+                }
                 ?>
-                <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
-                <div class="hoverimg1"></div>
-            <?php } else { ?>
-                <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
-            }
-            ?>
                 <div class="textcenter">
                     <span> <?php echo $eggs[$egg]['name']; ?> </span>
                     <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
                     <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
                 </div>
 
-            <div></div>
+                <div></div>
             </div>
             <?php
         } ?>
