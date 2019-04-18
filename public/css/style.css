@@ -192,6 +192,7 @@ body.fin1 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    text-decoration: none;
 }
 
 .boutonfin > button {

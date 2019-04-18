@@ -6,8 +6,7 @@ include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
-
-var_dump($_SESSION['hero']); ?>
+?>
 
 
 
@@ -21,7 +20,6 @@ var_dump($_SESSION['hero']); ?>
     <?php foreach ($characters as $key => $character)
     {
         if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
-
             <div class="block_cards">
 
                 <img src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
@@ -73,6 +71,6 @@ var_dump($_SESSION['hero']); ?>
     <button type="submit" formaction="#" formtarget="_self">JE CRÉE L’OEUF</button>
 </div>
 
-
+<a href="index.php">HOME</a>
 </body>
 </html>
