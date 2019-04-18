@@ -43,7 +43,7 @@ session_start();
                 ?>
                 <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
                 <div id="hoverimg1">
-                    <div id="image" style="background: url("/img/oeufmystèrev1.jpg") no-repeat; width: 200px; height: 220px; background-size: 100%;"></div>
+                    <div id="image" style="background: url('/img/oeufmystèrev1.jpg') no-repeat; width: 200px; height: 220px; padding-top: 8px; margin-bottom: 15px; background-size: contain;"></div>
                 </div>
             <?php } else { ?>
                 <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
