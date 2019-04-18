@@ -1,5 +1,5 @@
 <?php
-
+ require '_head.html';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs")); ?>
 
