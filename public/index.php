@@ -20,11 +20,8 @@ require_once('_head.php');
 
         <div class="home-intro-space">
             <h2 class="home-intro">J'ai faim !</br>
-            Apporte-moi le meilleur oeuf de </br>
-            Pâques et je te récompenserai !</br>
-            Néanmoins attention, ton mélange</br>
-            pourrait avoir de graves</br>
-            conséquences sur le royaume...</h2>
+            Apporte-moi le meilleur oeuf de Pâques et je te récompenserai !</br>
+            Néanmoins attention, ton mélange pourrait avoir de graves conséquences sur le royaume...</h2>
         </div>
     </div>
     <div class="boutonfin">
