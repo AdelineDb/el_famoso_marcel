@@ -19,6 +19,14 @@ p,span{
     color: #4C230A;
 }
 
+button{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+    color: #4C230A;
+    margin-top: 20px;
+
+}
+
 /*----------------INDEX------------------*/
 .home
 {
@@ -68,12 +76,78 @@ p,span{
 
 
 /*----------------OEUFS------------------*/
-
+.containerEggs {
+    width: 100vw;
+    color: #FFD387;
+}
 
 /*----------------FIN1------------------*/
+body.fin1{
+    width: 100vw;
+    background-color: #C4F1BE;
+}
+.fin1bloc1{
+    margin-top: 50px;
+    display: flex;
+}
 
+.fin1bloc1 > .cardjoueur{
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.fin1bloc2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width : 80%;
+}
+
+.fin1bloc2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width : 80%;
+}
+
+.fin1bloc2 p{
+    margin-top: 80px;
+    width: 350px;
+}
+
+.cardoeuffin1bloc1{
+    margin-top : 50px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boutonfin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.boutonfin > button{
+    margin-top: 20px;
+    width: 380px;
+    padding: 10px 10px;
+    background-color: #FFD387;
+    border-color: transparent;
+}
+
+.boutonfin > button:hover{
+    color: #FFD387;
+    background-color: #4C230A;
+}
 
 /*----------------FIN2------------------*/
 
 
 /*----------------FIN3------------------*/
+.fin1bloc3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
