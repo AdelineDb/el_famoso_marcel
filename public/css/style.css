@@ -85,7 +85,14 @@ g.titreCards {
 }
 
 /*----------------OEUFS------------------*/
+.cardjoueur{
+    display: flex;
+}
 
+.textintro{
+    width: 70%;
+    margin-left: 5%;
+}
 .containerEggs {
     background-color: #FFD387;
 }
@@ -110,12 +117,10 @@ g.titreCards {
 }
 
 .hoverimg {
-    background-image: url("../img/oeufmystèrev1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: none;
 }
 
-.hoverimg:hover {
+#hoverimg1 #image{
     display: block;
 }
 

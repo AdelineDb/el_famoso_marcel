@@ -19,9 +19,13 @@ session_start();
 
 <div class="cardjoueur">
     <p>Card du guerrier</p>
+    <p class="textintro">Maintenant à toi de jouer. <br/>
+        Choisis 4 oeufs pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.`
+        Tu ne vois pas les images, c'est normal... sois simplement plus malin.</p>
 </div>
 
 <div class="allTheCards1">
+
     <?php foreach ($eggs as $egg => $value) { ?>
 
         <?php
@@ -38,7 +42,9 @@ session_start();
                 || $eggs[$egg]['id'] == "5cac51240d488f0da6151bde" || $eggs[$egg]['id'] == "5cac51240d488f0da6151c14") {
                 ?>
                 <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
-                <div class="hoverimg1"></div>
+                <div id="hoverimg1">
+                    <div id="image" style="background: url("/img/oeufmystèrev1.jpg") no-repeat; width: 200px; height: 220px; background-size: 100%;"></div>
+                </div>
             <?php } else { ?>
                 <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
             }
