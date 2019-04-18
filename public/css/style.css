@@ -89,6 +89,11 @@ body.fin1{
     background-color: #FFD387;
     border-color: transparent;
 }
+
+.boutonfin > button:hover{
+    color: #FFD387;
+    background-color: #4C230A;
+}
 /*----------------FIN2------------------*/
 
 
