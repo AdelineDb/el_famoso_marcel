@@ -14,7 +14,7 @@ require_once('_head.php');
             <p>Card du guerrier</p>
         </div>
         <div class="fin1bloc2">
-            <img src="img/roimort.jpg" alt="la reine est contente" width="320px">
+            <img src="img/roimort.jpg" alt="la reine est morte" width="320px">
             <p>Le royaume est déchu.<br/>
                 Tu es banni.<br/>
                 Pas merci hein…</p>
