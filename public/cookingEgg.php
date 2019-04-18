@@ -1,14 +1,14 @@
 <?php
+session_start();
 
 require '_head.php';
 include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
+$characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
 
-session_start();
-//var_dump($_SESSION['hero']);
+var_dump($_SESSION['hero']); ?>
 
-?>
 
 
 <body class="containerEggs">
@@ -18,7 +18,22 @@ session_start();
 <h2>Maintenant crée ton oeuf parfait pour la reine</h2>
 
 <div class="cardjoueur">
-    <p>Card du guerrier</p>
+    <?php foreach ($characters as $key => $character)
+    {
+        if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
+
+            <div class="block_cards">
+
+                <img src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
+
+                <div class="">
+                    <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
+                    <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+                </div>
+
+            </div>
+
+        <?php }} ?>
     <p class="textintro">Maintenant à toi de jouer. <br/>
         Choisis 4 oeufs pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.`
         Tu ne vois pas les images, c'est normal... sois simplement plus malin.</p>
@@ -45,7 +60,7 @@ session_start();
                     <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
                 </div>
 
-            <div></div>
+                <div></div>
             </div>
             <?php
         } ?>
