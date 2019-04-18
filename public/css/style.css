@@ -19,7 +19,7 @@ p, span {
     color: #4C230A;
 }
 
-button{
+button {
     font-family: 'Cabin Sketch', cursive;
     font-size: 1.5em;
     color: #4C230A;
@@ -33,7 +33,7 @@ button{
 }
 
 .hometaille {
-    width : 85%;
+    width: 85%;
     margin: 70px auto;
 }
 
@@ -50,21 +50,22 @@ button{
 
 .home-intro {
     margin-top: 70px;
-    width : 600px;
-    text-align: left!important;
+    width: 600px;
+    text-align: left !important;
 }
-.reine{
+
+.reine {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: -20px;
 }
 
 /*----------------CHARACTERES------------------*/
-.perso{
+.perso {
     background-color: #B8F2E6;
 }
-.allTheCards
-{
+
+.allTheCards {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -72,25 +73,24 @@ button{
     flex-wrap: wrap;
 }
 
-g.titreCards
-{
+g.titreCards {
     text-align: center;
     margin-top: 0;
 }
 
-.descriptionCards
-{
+.descriptionCards {
     text-align: center;
     margin-top: -25px;
     font-size: 1.3em;
 }
+
 /*----------------OEUFS------------------*/
 
 .containerEggs {
     background-color: #FFD387;
 }
 
-.allTheCards1{
+.allTheCards1 {
     width: 85%;
     margin: 40px auto;
     display: flex;
@@ -98,26 +98,28 @@ g.titreCards
     flex-wrap: wrap;
 }
 
-.block_cards1{
+.block_cards1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px 30px;
 }
 
-.block_cards1 img{
+.block_cards1 img {
     margin-bottom: 20px;
 }
 
-.hoverimg1 {
+.hoverimg {
+    background-image: url("../img/oeufmystèrev1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hoverimg:hover {
     display: block;
 }
 
-.hoverimg1:hover {
-    display: none;
-}
-
-.textcenter > span{
+.textcenter > span {
 
     font-family: 'Cabin Sketch', cursive;
     font-size: 1em;
@@ -125,14 +127,15 @@ g.titreCards
     text-align: center;
     display: block;
 }
-.boutonfin1{
+
+.boutonfin1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
 }
 
-.boutonfin1 > button{
+.boutonfin1 > button {
     margin-top: 20px;
     width: 380px;
     padding: 10px 10px;
@@ -140,60 +143,61 @@ g.titreCards
     border-color: transparent;
 }
 
-.boutonfin1 > button:hover{
+.boutonfin1 > button:hover {
     color: #C4F1BE;
     background-color: #4C230A;
 }
 
 
 /*----------------FIN1------------------*/
-body.fin1{
+body.fin1 {
     background-color: #C4F1BE;
 }
-.fin1bloc1{
+
+.fin1bloc1 {
     margin-top: 50px;
     display: flex;
 }
 
-.fin1bloc1 > .cardjoueur{
+.fin1bloc1 > .cardjoueur {
     margin-right: 30px;
     margin-left: 20px;
 }
 
-.fin1bloc2{
-    display:flex;
+.fin1bloc2 {
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width : 80%;
+    width: 80%;
 }
 
-.fin1bloc2{
-    display:flex;
+.fin1bloc2 {
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width : 80%;
+    width: 80%;
 }
 
-.fin1bloc2 p{
+.fin1bloc2 p {
     margin-top: 80px;
     width: 350px;
 }
 
-.cardoeuffin1bloc1{
-    margin-top : 50px;
-    display:flex;
+.cardoeuffin1bloc1 {
+    margin-top: 50px;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.boutonfin{
+.boutonfin {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
 }
 
-.boutonfin > button{
+.boutonfin > button {
     margin-top: 20px;
     width: 380px;
     padding: 10px 10px;
@@ -201,7 +205,7 @@ body.fin1{
     border-color: transparent;
 }
 
-.boutonfin > button:hover{
+.boutonfin > button:hover {
     color: #FFD387;
     background-color: #4C230A;
 }
@@ -210,7 +214,7 @@ body.fin1{
 
 
 /*----------------FIN3------------------*/
-.fin1bloc3{
+.fin1bloc3 {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;

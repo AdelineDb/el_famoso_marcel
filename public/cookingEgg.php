@@ -13,7 +13,7 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
 
 <div class="cardjoueur">
     <p>Card du guerrier</p>
-</div
+</div>
 
 <div class="allTheCards1">
     <?php foreach ($eggs as $egg => $value) { ?>
@@ -31,8 +31,8 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
             <?php if ($eggs[$egg]['id'] == "5cac51240d488f0da6151be6" || $eggs[$egg]['id'] == "5cac51240d488f0da6151bed"
                 || $eggs[$egg]['id'] == "5cac51240d488f0da6151bde" || $eggs[$egg]['id'] == "5cac51240d488f0da6151c14") {
                 ?>
-                <img class="hoverimg1" src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px">
                 <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="200px" height="220px">
+                <div class="hoverimg1"></div>
             <?php } else { ?>
                 <img src="img/oeufmystèrev1.jpg" alt="oeuf" width="200px" height="220px"> <?php
             }
