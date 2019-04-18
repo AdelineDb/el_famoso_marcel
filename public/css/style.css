@@ -19,8 +19,45 @@ p, span {
     color: #4C230A;
 }
 
-/*----------------INDEX------------------*/
+button{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+    color: #4C230A;
+    margin-top: 20px;
 
+}
+
+/*----------------INDEX------------------*/
+.home {
+    background-color: #C4F1BE;
+}
+
+.hometaille {
+    width : 85%;
+    margin: 70px auto;
+}
+
+.central-home {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cersei-center {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.home-intro {
+    margin-top: 70px;
+    width : 600px;
+    text-align: left!important;
+}
+.reine{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
 
 /*----------------CHARACTERES------------------*/
 
@@ -34,9 +71,72 @@ p, span {
 
 
 /*----------------FIN1------------------*/
+body.fin1{
+    width: 100vw;
+    background-color: #C4F1BE;
+}
+.fin1bloc1{
+    margin-top: 50px;
+    display: flex;
+}
 
+.fin1bloc1 > .cardjoueur{
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.fin1bloc2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width : 80%;
+}
+
+.fin1bloc2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width : 80%;
+}
+
+.fin1bloc2 p{
+    margin-top: 80px;
+    width: 350px;
+}
+
+.cardoeuffin1bloc1{
+    margin-top : 50px;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boutonfin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.boutonfin > button{
+    margin-top: 20px;
+    width: 380px;
+    padding: 10px 10px;
+    background-color: #FFD387;
+    border-color: transparent;
+}
+
+.boutonfin > button:hover{
+    color: #FFD387;
+    background-color: #4C230A;
+}
 
 /*----------------FIN2------------------*/
 
 
 /*----------------FIN3------------------*/
+.fin1bloc3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
