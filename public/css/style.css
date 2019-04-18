@@ -25,6 +25,31 @@ p,span{
 
 /*----------------CHARACTERES------------------*/
 
+.allTheCards
+{
+    display: flex;
+}
+
+.block_cards
+{
+    width: 220px;
+}
+
+.titreCards
+{
+    text-align: center;
+    margin-top: 0;
+}
+
+.descriptionCards
+{
+    text-align: center;
+    margin-top: -25px;
+    font-size: 1.3em;
+}
+
+
+
 
 
 /*----------------OEUFS------------------*/

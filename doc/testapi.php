@@ -1,5 +1,5 @@
 <?php
-$eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"));
+$characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"));
 
 echo '<pre>';
 var_dump($eggs);
@@ -11,5 +11,4 @@ foreach ($eggs as $key => $egg)
 }
 
 
-$char = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"));
 
