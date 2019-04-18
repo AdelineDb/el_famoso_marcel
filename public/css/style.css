@@ -28,49 +28,37 @@ button{
 }
 
 /*----------------INDEX------------------*/
-.home
-{
+.home {
     background-color: #C4F1BE;
 }
 
-.central-home
-{
-    display: flex;
-    justify-content: center;
+.hometaille {
+    width : 85%;
+    margin: 70px auto;
 }
 
-.cersei-center
-{
+.central-home {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cersei-center {
     text-align: center;
+    margin-top: -20px;
 }
 
-.cersei-center > p
-{
-    padding-bottom: -20px;
-}
-
-.home-intro-space
-{
-    margin-left: 100px;
+.home-intro {
     margin-top: 70px;
+    width : 600px;
+    text-align: left!important;
+}
+.reine{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: -20px;
 }
 
-.home-intro
-{
-    text-align: left;
-}
-
-.btn-home
-{
-    width: 150px;
-    height: 50px;
-    background-color: #FFD387;
-}
-
-.btn-center {
-    display: flex;
-    justify-content: space-around;
-}
 /*----------------CHARACTERES------------------*/
 
 
