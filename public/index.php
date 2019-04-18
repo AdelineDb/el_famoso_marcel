@@ -27,10 +27,8 @@ require_once('_head.php');
             conséquences sur le royaume...</h2>
         </div>
     </div>
-    <div class="btn-center">
-        <button class="btn-home" type="button">
-            JE JOUE
-        </button>
+    <div class="boutonfin">
+        <button type="button" formaction="choixPersonnage.php" formtarget="_self">JE JOUE</button>
     </div>
 
 </section>

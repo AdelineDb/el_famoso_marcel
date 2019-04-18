@@ -14,8 +14,8 @@ require_once('_head.php');
     </div>
 
     <div class="boutonfin">
-        <button type="submit" formaction="choixPersonnage.php" formtarget="_blank">JE RECOMMENCE L'OEUF PARFAIT</button>
-        <button type="submit" formaction="cookingegg.php" formtarget="_blank">JE CHANGE DE PERSONNAGE</button>
+        <button type="submit" formaction="choixPersonnage.php" formtarget="_self">JE RECOMMENCE L'OEUF PARFAIT</button>
+        <button type="submit" formaction="cookingegg.php" formtarget="_self">JE CHANGE DE PERSONNAGE</button>
     </div>
 
 
