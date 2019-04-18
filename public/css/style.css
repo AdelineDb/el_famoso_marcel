@@ -60,15 +60,16 @@ button{
 }
 
 /*----------------CHARACTERES------------------*/
-
+.perso{
+    background-color: #B8F2E6;
+}
 .allTheCards
 {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
-}
-
-.block_cards
-{
-    width: 220px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .titreCards
@@ -84,10 +85,6 @@ button{
     font-size: 1.3em;
 }
 
-
-
-
-
 /*----------------OEUFS------------------*/
 .containerEggs {
     width: 100vw;
@@ -96,7 +93,6 @@ button{
 
 /*----------------FIN1------------------*/
 body.fin1{
-    width: 100vw;
     background-color: #C4F1BE;
 }
 .fin1bloc1{

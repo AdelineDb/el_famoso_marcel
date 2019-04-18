@@ -2,7 +2,9 @@
 
 require '_head.php'; ?>
 
-<body>
+<body class="perso">
+
+<h1>EASTER COOK FOR THE QUEEN</h1>
 
 <h2>Choisis ton personnage</h2>
 
@@ -19,7 +21,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 
         <div class="block_cards">
 
-            <img class="" src="<?php echo $characters[$key]['image']; ?>" width="220px" alt="">
+            <img class="" src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
 
             <div class="">
                 <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
@@ -32,6 +34,9 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 
     } ?>
 
+</div>
+<div class="boutonfin">
+    <button type="button" formaction="cookingegg.php" formtarget="_self">JE CHOISIS</button>
 </div>
 
 
