@@ -1,3 +1,7 @@
+<?php
+$egg = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
+$char = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
