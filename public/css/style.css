@@ -88,20 +88,61 @@ g.titreCards
 
 .containerEggs {
     background-color: #FFD387;
-    border: 1px solid red;
 }
 
 .allTheCards1{
-    border: 1px solid blue;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    width: 85%;
+    margin: 40px auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .block_cards1{
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 30px;
+}
+
+.block_cards1 img{
+    margin-bottom: 20px;
+}
+
+.hoverimg1 {
+    display: block;
+}
+
+.hoverimg1:hover {
+    display: none;
+}
+
+.textcenter > span{
+
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1em;
+    color: #4C230A;
+    text-align: center;
+    display: block;
+}
+.boutonfin1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.boutonfin1 > button{
+    margin-top: 20px;
+    width: 380px;
+    padding: 10px 10px;
+    background-color: #C4F1BE;
+    border-color: transparent;
+}
+
+.boutonfin1 > button:hover{
+    color: #C4F1BE;
+    background-color: #4C230A;
 }
 
 
