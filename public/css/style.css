@@ -63,6 +63,13 @@ body.fin1{
     width : 80%;
 }
 
+.fin1bloc2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width : 80%;
+}
+
 .fin1bloc2 p{
     margin-top: 80px;
     width: 350px;
@@ -94,6 +101,7 @@ body.fin1{
     color: #FFD387;
     background-color: #4C230A;
 }
+
 /*----------------FIN2------------------*/
 
 
