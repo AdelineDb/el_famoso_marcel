@@ -1,9 +1,18 @@
 <?php
+<<<<<<< HEAD
 require '_head.php';
 include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 ?>
+=======
+session_start();
+var_dump($_SESSION['hero']);
+ require '_head.php';
+
+
+$eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs")); ?>
+>>>>>>> 59b52f6190be46ebcdc08f49ebc476702790949b
 
 <body class="containerEggs">
 
@@ -50,11 +59,15 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
 
     <?php } ?>
 
+<<<<<<< HEAD
 </div>
 
 <div class="boutonfin1">
     <button type="submit" formaction="#" formtarget="_self">JE CRÉE L’OEUF</button>
 </div>
 
+=======
+</section>
+>>>>>>> 59b52f6190be46ebcdc08f49ebc476702790949b
 </body>
 </html>
