@@ -84,6 +84,10 @@ button {
     font-size: 1.3em;
 }
 
+.css{
+    border : 1px solid red;
+}
+
 /*----------------OEUFS------------------*/
 .cardjoueur{
     display: flex;

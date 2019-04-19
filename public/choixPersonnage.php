@@ -47,8 +47,10 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     $characters[$key]['id'] == '5cac51240d488f0da6151c41' || $characters[$key]['id'] == '5cac51240d488f0da6151c4c' ||
     $characters[$key]['id'] == '5cac51240d488f0da6151c34'){ ?>
 
-    <input type="radio" name="hero" value="<?php echo $characters[$key]['name']; ?>" >
-    <label></label>
+    <div class="css">
+        <input type="radio" name="hero" value="<?php echo $characters[$key]['name']; ?>" >
+        <label></label>
+    </div>
     <?php }} ?>
     <div class="boutonfin">
         <button type="submit" formaction="" formtarget="_self">JE CHOISIS</button>
