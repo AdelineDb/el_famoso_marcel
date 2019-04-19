@@ -75,6 +75,7 @@ button {
 .titreCards {
     text-align: center;
     margin-top: 0;
+    margin-left: -5px;
 }
 
 .descriptionCards {
@@ -96,12 +97,22 @@ button {
 
 /*----------------OEUFS------------------*/
 .cardjoueur{
+    position: relative;
+}
+ .block1{
+     margin-left: 3.5%;
+     position: absolute;
+ }
+
+.textintro1{
+    margin-top: -30px;
     display: flex;
+    flex-direction: column;
 }
 
-.textintro{
+.textintro2{
     width: 70%;
-    margin-left: 5%;
+    margin-left: 25%;
 }
 .containerEggs {
     background-color: #FFD387;
@@ -161,28 +172,12 @@ body.fin1 {
     background-color: #C4F1BE;
 }
 
-.fin1bloc1 {
-    margin-top: 50px;
-    display: flex;
-}
-
-.fin1bloc1 > .cardjoueur {
-    margin-right: 30px;
-    margin-left: 20px;
-}
-
 .fin1bloc2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 80%;
-}
-
-.fin1bloc2 {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 80%;
+    margin-left: 10%;
 }
 
 .fin1bloc2 p {
@@ -201,7 +196,6 @@ body.fin1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
     text-decoration: none;
 }
 
@@ -217,13 +211,22 @@ body.fin1 {
     color: #FFD387;
     background-color: #4C230A;
 }
+.bottom{
+    margin-bottom: 40px;
+}
 
 /*----------------FIN2------------------*/
-
+.textmort{
+    display: flex;
+    flex-direction: column;
+}
+.textmort2{
+    display: flex;
+}
 
 /*----------------FIN3------------------*/
 .fin1bloc3 {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
