@@ -211,6 +211,7 @@ button {
     color: #C4F1BE;
     background-color: #4C230A;
     text-decoration: none;
+    transition: .4s;
 
 }
 
@@ -263,6 +264,7 @@ body.fin1 {
 .boutonfin > button:hover {
     color: #FFD387;
     background-color: #4C230A;
+    transition: .4s;
 }
 .bottom{
     margin-bottom: 40px;
