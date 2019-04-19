@@ -1,12 +1,8 @@
 <?php
 
-
 require '_head.php';
 
 require 'checkFormHero.php';
-
-var_dump($_POST);
-
 
 ?>
 
@@ -29,7 +25,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 
         <div class="block_cards">
 
-            <img class="" src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
+            <img src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
 
             <div class="">
                 <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
