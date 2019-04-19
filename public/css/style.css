@@ -67,7 +67,6 @@ button {
 
 .allTheCards {
     margin-top: 50px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -84,8 +83,15 @@ button {
     font-size: 1.3em;
 }
 
-.css{
-    border : 1px solid red;
+.radio {
+    width: 300px;
+    margin: 10px auto;
+    padding-left: 120px;
+}
+
+.label-radio{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1em;
 }
 
 /*----------------OEUFS------------------*/
