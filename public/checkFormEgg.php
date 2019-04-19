@@ -19,18 +19,28 @@ if (!isset($_SESSION['egg'])) {
 
         <?php
         $succes = 0;
+
+
         ksort($esterEgg);
         ksort($_SESSION['egg']);
 
         foreach ($_SESSION['egg'] as $id => $egg) {
             if ($id == "5cac51240d488f0da6151c07" || $id == "5cac51240d488f0da6151bd1") {
                 $succes += 1;}
-
         }
         if ($succes == 2) {
             header('Location: fin1.php');
         } else {
             header('Location: fin2.php');
+        }
+
+        $nbOeufs = 0;
+        foreach ($_SESSION['egg'] as $id => $egg) {
+            $nbOeufs += 1;
+        }
+
+        if ($nbOeufs > 4 || $nbOeufs < 4){
+            header('Location: cookingEgg.php');
         }
 
         if (serialize($esterEgg) == serialize($_SESSION['egg'])) {
