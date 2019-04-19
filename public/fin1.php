@@ -36,7 +36,6 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     </div>
 
     <div class="bottom">
-        <a class="boutonfin" href="lougout1.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
         <a class="boutonfin" href="lougout1.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
     </div>
 
