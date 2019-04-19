@@ -19,8 +19,8 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
             <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
 
             <div class="">
-                <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
-                <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+                <p class="titrecard"><?= $characters[$key]['name'] . '<br>' . $characters[$key]['origin']; ?></p>
+                </p>
             </div>
             <?php }} ?>
         </div>
