@@ -43,6 +43,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
         <p>Card2</p>
         <p>Card3</p>
         <p>Card4</p>
+        <p>Card5</p>
 
     </div>
     <div class="bottom">
