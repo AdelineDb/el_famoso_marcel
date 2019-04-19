@@ -144,6 +144,7 @@ button {
     color: #4C230A;
     text-align: center;
     display: block;
+    border: 1px solid red;
 }
 
 .boutonfin1 {
@@ -174,7 +175,7 @@ button {
     margin: 10px auto;
     padding: 10px;
     font-family: 'Cabin Sketch', cursive;
-
+    border: 1px solid blue;
 }
 
 .addegg1 {

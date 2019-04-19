@@ -39,7 +39,7 @@ if (isset($_GET['add_egg'])) {
 <div class="cardjoueur">
 
     <?php foreach ($characters as $key => $character) {
-        if ($characters[$key]['name'] == $_SESSION['hero']) { ?>
+        if (isset($_SESSION['hero']) && $characters[$key]['name'] == $_SESSION['hero']) { ?>
             <div class="block_cards block1">
 
                 <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
@@ -65,11 +65,8 @@ if (isset($_GET['add_egg'])) {
 
 <div class="allTheCards1">
 
-    <?php foreach ($eggs
-
-    as $egg => $value) { ?>
-
     <?php
+       foreach ($eggs as $egg => $value) {
     if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
     $eggs[$egg]['id'] == '5cac51240d488f0da6151be0' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf3' ||
     $eggs[$egg]['id'] == '5cac51240d488f0da6151c09' || $eggs[$egg]['id'] == '5cac51240d488f0da6151be6' ||
@@ -84,16 +81,18 @@ if (isset($_GET['add_egg'])) {
             <span> <?php echo $eggs[$egg]['name']; ?> </span>
             <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
             <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
-        </div>
-        <?php if ((isset($_SESSION['egg'])== $eggs[$egg]['id'])) { ?>
-            <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
-        <?php } else { ?>
-            <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">J'ai choisi cet oeuf</a>
-        <?php }
-        }
-        } ?>
 
-        <div></div>
+            <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
+                <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Oeuf sélectionné</a>
+            <?php } else { ?>
+                <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
+            <?php } ?>
+        </div>
+        <?php
+        }
+        }
+        ?>
+
     </div>
 </div>
 
