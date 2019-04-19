@@ -76,29 +76,30 @@ if (isset($_GET['add_egg'])) {
     $eggs[$egg]['id'] == '5cac51240d488f0da6151bd3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bdf' ||
     $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf5') {
     ?>
-    <div class="block_cards1">
-        <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
-        <div class="textcenter">
-            <span> <?php echo $eggs[$egg]['name']; ?> </span>
-            <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
-            <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
+        <div class="block_cards1">
+            <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
+            <div class="textcenter">
+                <span> <?php echo $eggs[$egg]['name']; ?> </span>
+                <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
+                <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
 
-            <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
-                <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Oeuf sélectionné</a>
-            <?php } else { ?>
-                <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
-            <?php } ?>
+                <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
+                    <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Oeuf sélectionné</a>
+                <?php } else { ?>
+                    <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
+                <?php } ?>
+            </div>
+
         </div>
         <?php
         }
         }
         ?>
 
-    </div>
 </div>
 
 <div>
-    <a class="boutonfin1 textdeconone" href="checkFormEgg.php">
+    <a class="boutonfin1 textdeconone" href="logout1.php">
         <button type="submit">JE CRÉE L'OEUF</button>
     </a>
 </div>
