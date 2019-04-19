@@ -15,7 +15,7 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
         {
         if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
         <div class="cardjoueur">
-            <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
+            <img src="<?php echo $characters[$key]['image']; ?>" width="120px" "alt="">
 
             <div class="">
                 <p class="titrecard"><?= $characters[$key]['name'] . '<br>' . $characters[$key]['origin']; ?></p>
@@ -27,7 +27,7 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
     <div class="textintro1">
         <h2>Tu as tué la Reine !</h2>
         <div class="fin1bloc2">
-            <img src="img/roimort.jpg" alt="la reine est morte" width="320px">
+            <img src="img/roimort.jpg" alt="la reine est morte" width="320px" height="446px">
             <p>Le royaume est déchu.<br/>
                 Tu es banni.<br/>
                 Pas merci hein…</p>
