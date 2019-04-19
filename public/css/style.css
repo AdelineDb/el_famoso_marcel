@@ -140,11 +140,14 @@ button {
     border-color: transparent;
 }
 
+.inputt {
+    border: 1px solid red;
+}
+
 .boutonfin1 > button:hover {
     color: #C4F1BE;
     background-color: #4C230A;
 }
-
 
 /*----------------FIN1------------------*/
 body.fin1 {
