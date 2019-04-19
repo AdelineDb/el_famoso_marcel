@@ -1,7 +1,6 @@
 <?php
-session_start();
-
 require '_head.php';
+require 'checkFormHero.php';
 include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
