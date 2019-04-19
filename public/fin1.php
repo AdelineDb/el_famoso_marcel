@@ -39,10 +39,6 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
         <a class="boutonfin" href="lougout1.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
     </div>
 
-    <a href="index.php">HOME</a>
-    <a href="fin1.php">FIN 1</a>
-    <a href="fin2.php">FIN 2</a>
-    <a href="fin3.php">FIN 3</a>
 </section>
 </body>
 </html>
