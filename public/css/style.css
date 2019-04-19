@@ -154,13 +154,12 @@ button {
 }
 
 .textcenter > span {
-
     font-family: 'Cabin Sketch', cursive;
     font-size: 1em;
     color: #4C230A;
     text-align: center;
     display: block;
-    border: 1px solid red;
+    width: 210px
 }
 
 .boutonfin1 {
@@ -184,23 +183,27 @@ button {
 }
 
 .addegg {
+    display: inline-block;
     text-decoration: none;
-    border: 1px solid #C4F1BE;
     background-color: #C4F1BE;
     color: #4C230A;
-    margin: 10px auto;
+    width: 190px;
     padding: 10px;
+    margin-top: 10px;
     font-family: 'Cabin Sketch', cursive;
-    border: 1px solid blue;
+    text-align: center;
 }
 
 .addegg1 {
     text-decoration: none;
+    display: inline-block;
     background-color: #B8F2E6;
     color: #4C230A;
-    margin: 10px auto;
+    width: 190px;
     padding: 10px;
+    margin-top: 10px;
     font-family: 'Cabin Sketch', cursive;
+    text-align: center;
 
 }
 

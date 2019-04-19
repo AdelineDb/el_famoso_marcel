@@ -54,6 +54,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     <?php }} ?>
     <div class="bottom">
             <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE FAIS MON CHOIX</button></a>
+        <a class="boutonfin" href="index.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
     </div>
 </form>
 

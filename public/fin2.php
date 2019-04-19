@@ -36,26 +36,11 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
         </div>
     </div>
 
-
-
-
-    <div class="cardoeuffin1bloc1">
-
-        <?php var_dump($_SESSION['egg']);
-        if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
-        <p><div class="block_cards1">
-            <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
-            <div class="textcenter">
-                <span> <?php echo $eggs[$egg]['name']; ?> </span>
-
-            </div></p>
-        <?php } ?>
-
-    </div>
     <div class="bottom">
-        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE JOUE</button></a>
-        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
+        <a class="boutonfin" href="lougout1.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
+        <a class="boutonfin" href="index.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
     </div>
+
 
     <a href="index.php">HOME</a>
     <a href="fin1.php">FIN 1</a>
