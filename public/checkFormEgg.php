@@ -11,9 +11,6 @@ if (!isset($_SESSION['egg'])) {
 ?>
 <section class="cookies container-fluid">
     <div class="row">
-        <?php echo '<pre>';
-        var_dump($_SESSION['egg']);
-        echo '</pre>' ?>
         <ul>
             <?php
             $succes = 0;
@@ -22,24 +19,14 @@ if (!isset($_SESSION['egg'])) {
                     header('Location: fin3.php');
                 } elseif ($key == "5cac51240d488f0da6151c07" || $key == "5cac51240d488f0da6151bd1") {
                     $succes += 1;
-
                 }
-                echo '<pre>';
-                var_dump($succes);
-                echo '</pre>';
-                echo '<pre>';
-                var_dump($key);
-                echo '</pre>';
             }
             if ($succes == 2) {
                 header('Location: fin1.php');
             } else {
                 header('Location: fin2.php');
             }
-            var_dump($_SESSION['egg']);
             ?>
-
-
         </ul>
     </div>
 </section>

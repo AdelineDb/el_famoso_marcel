@@ -159,6 +159,32 @@ button {
     padding: 10px 10px;
     background-color: #C4F1BE;
     border-color: transparent;
+    text-decoration: none;
+}
+
+.textdeconone {
+    text-decoration: none;
+}
+
+.addegg {
+    text-decoration: none;
+    border: 1px solid #C4F1BE;
+    background-color: #C4F1BE;
+    color: #4C230A;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+
+.addegg1 {
+    text-decoration: none;
+    background-color: #B8F2E6;
+    color: #4C230A;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Cabin Sketch', cursive;
+
 }
 
 .inputt {
@@ -168,6 +194,8 @@ button {
 .boutonfin1 > button:hover {
     color: #C4F1BE;
     background-color: #4C230A;
+    text-decoration: none;
+
 }
 
 /*----------------FIN1------------------*/

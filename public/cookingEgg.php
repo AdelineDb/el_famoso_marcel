@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 require '_head.php';
 include '../src/function.php';
 
@@ -23,8 +22,8 @@ $allEggs = [
     '5cac51240d488f0da6151be3', // trump
     '5cac51240d488f0da6151bf5'];
 
-if (isset($_GET['add_egg'])){
-    if(in_array($_GET['add_egg'], $allEggs)) {
+if (isset($_GET['add_egg'])) {
+    if (in_array($_GET['add_egg'], $allEggs)) {
         $addEggs = $_GET['add_egg'];
         if (!isset($_SESSION['egg'][$addEggs])) {
             $_SESSION['egg'][$addEggs] = 1;
@@ -39,9 +38,8 @@ if (isset($_GET['add_egg'])){
 
 <div class="cardjoueur">
 
-    <?php foreach ($characters as $key => $character)
-    {
-        if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
+    <?php foreach ($characters as $key => $character) {
+        if ($characters[$key]['name'] == $_SESSION['hero']) { ?>
             <div class="block_cards block1">
 
                 <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
@@ -67,7 +65,9 @@ if (isset($_GET['add_egg'])){
 
 <div class="allTheCards1">
 
-    <?php foreach ($eggs as $egg => $value) { ?>
+    <?php foreach ($eggs
+
+    as $egg => $value) { ?>
 
     <?php
     if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
@@ -84,46 +84,23 @@ if (isset($_GET['add_egg'])){
             <span> <?php echo $eggs[$egg]['name']; ?> </span>
             <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
             <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
-            <input class="inputt" type="checkbox" id="scales" name="scales">
         </div>
-        <?php
+        <?php if ((isset($_SESSION['egg'])== $eggs[$egg]['id'])) { ?>
+            <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
+        <?php } else { ?>
+            <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">J'ai choisi cet oeuf</a>
+        <?php }
+        }
         } ?>
 
-        <?php } ?>
-
-        <?php foreach ($eggs as $egg => $value) { ?>
-
-            <?php
-            if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151be0' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf3' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151c09' || $eggs[$egg]['id'] == '5cac51240d488f0da6151be6' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151bcd' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bd1' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151c14' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bde' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151bd3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bdf' ||
-                $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf5') {
-                ?>
-                <div class="block_cards1">
-                    <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
-                    <div class="textcenter">
-                        <span> <?php echo $eggs[$egg]['name']; ?> </span>
-                        <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
-                        <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
-                    </div>
-
-                    <a href="?add_egg=<?= $eggs[$egg]['id']?>">Je choisis cet oeuf</a>
-
-
-
-                    <div></div>
-                </div>
-                <?php
-            } ?>
-
-        <?php } ?>
+        <div></div>
     </div>
+</div>
 
 <div>
-    <a class="boutonfin1" href="choixPersonnage.php"><button type="submit">JE CRÉE L'OEUF</button></a>
+    <a class="boutonfin1 textdeconone" href="checkFormEgg.php">
+        <button type="submit">JE CRÉE L'OEUF</button>
+    </a>
 </div>
 
 <a href="index.php">HOME</a>
