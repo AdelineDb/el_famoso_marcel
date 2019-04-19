@@ -1,5 +1,9 @@
 <?php
+
+session_start();
+
 require_once('_head.php');
+$characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
 
 ?>
 <body class="fin1">
@@ -10,9 +14,17 @@ require_once('_head.php');
     <h2>Tu as tué la Reine !</h2>
 
     <div class="fin1bloc1">
+        <?php foreach ($characters as $key => $character)
+        {
+        if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
         <div class="cardjoueur">
-            <p>Card du guerrier</p>
-        </div>
+            <img src="<?php echo $characters[$key]['image']; ?>" width="250px" height="380px" alt="">
+
+            <div class="">
+                <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
+                <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+            </div>
+            <?php }} ?>
         <div class="fin1bloc2">
             <img src="img/roimort.jpg" alt="la reine est morte" width="320px">
             <p>Le royaume est déchu.<br/>

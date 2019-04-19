@@ -51,7 +51,6 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     <label></label>
     <?php }} ?>
     <div class="boutonfin">
-        <?= $messageErreur ?>
         <button type="submit" formaction="" formtarget="_self">JE CHOISIS</button>
     </div>
 </form>

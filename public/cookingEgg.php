@@ -66,9 +66,9 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 
     </div>
 
-    <div class="boutonfin1">
-        <button type="submit" formaction="#" formtarget="_self">JE CRÉE L’OEUF</button>
-    </div>
+<div class="boutonfin1">
+    <button type="submit" formaction="fin1.php" formtarget="_self">JE CRÉE L’OEUF</button>
+</div>
 
     <a href="index.php">HOME</a>
 </body>
