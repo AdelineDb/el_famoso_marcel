@@ -38,8 +38,9 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
 
 
     <div class="cardoeuffin1bloc1">
-<<<<<<< HEAD
-        <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
+
+        <?php var_dump($_SESSION['egg']);
+        if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
         <p><div class="block_cards1">
             <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
             <div class="textcenter">
@@ -47,13 +48,6 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
 
             </div></p>
         <?php } ?>
-=======
-        <p>Card1</p>
-        <p>Card2</p>
-        <p>Card3</p>
-        <p>Card4</p>
-        <p>Card5</p>
->>>>>>> 1ba983f1cba295c6886d5bf2433aabf78c391f78
 
     </div>
     <div class="bottom">
