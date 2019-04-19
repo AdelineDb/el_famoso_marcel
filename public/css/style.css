@@ -140,7 +140,6 @@ button {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 1px solid blue;
 }
 
 .block_cards1 {
@@ -148,7 +147,6 @@ button {
     flex-direction: column;
     justify-content: center;
     margin: 40px 30px;
-    border: 1px solid green;
 }
 
 .block_cards1 img {
