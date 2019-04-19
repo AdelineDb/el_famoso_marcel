@@ -1,6 +1,5 @@
 <?php
 
-
 $char = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
 
 require_once('_head.php');
@@ -28,8 +27,8 @@ require_once('_head.php');
         </div>
     </div>
 </section>
-<div class="boutonfin">
-    <button type="button" formaction="choixPersonnage.php" formtarget="_self">JE JOUE</button>
+<div>
+    <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE JOUE</button></a>
 </div>
 
 </body>

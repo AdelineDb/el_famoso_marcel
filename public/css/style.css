@@ -34,7 +34,7 @@ button {
 
 .hometaille {
     width: 85%;
-    margin: 70px auto;
+    margin: 60px auto 5px;
 }
 
 .central-home {
@@ -85,7 +85,14 @@ button {
 }
 
 /*----------------OEUFS------------------*/
+.cardjoueur{
+    display: flex;
+}
 
+.textintro{
+    width: 70%;
+    margin-left: 5%;
+}
 .containerEggs {
     background-color: #FFD387;
 }
@@ -102,21 +109,11 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 30px;
+    margin: 40px 30px;
 }
 
 .block_cards1 img {
     margin-bottom: 20px;
-}
-
-.hoverimg {
-    background-image: url("../img/oeufmystèrev1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.hoverimg:hover {
-    display: block;
 }
 
 .textcenter > span {
@@ -195,6 +192,7 @@ body.fin1 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    text-decoration: none;
 }
 
 .boutonfin > button {
