@@ -1,14 +1,37 @@
 <?php
 session_start();
 
+
 require '_head.php';
 include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
+$allEggs = [
+    '5cac51240d488f0da6151bed',
+    '5cac51240d488f0da6151c07',
+    '5cac51240d488f0da6151be0',
+    '5cac51240d488f0da6151bf3',
+    '5cac51240d488f0da6151c09',
+    '5cac51240d488f0da6151be6',
+    '5cac51240d488f0da6151bcd',
+    '5cac51240d488f0da6151bd1',
+    '5cac51240d488f0da6151c14',
+    '5cac51240d488f0da6151bde',
+    '5cac51240d488f0da6151bd3',
+    '5cac51240d488f0da6151bdf',
+    '5cac51240d488f0da6151be3',
+    '5cac51240d488f0da6151bf5'];
+
+if (isset($_GET['add_egg'])){
+    if(in_array($_GET['add_egg'], $allEggs)) {
+        $addEggs = $_GET['add_egg'];
+        if (!isset($_SESSION['egg'][$addEggs])) {
+            $_SESSION['egg'][$addEggs] = 1;
+        }
+    }
+}
 ?>
-
-
 
 <body class="containerEggs">
 
@@ -38,32 +61,38 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 </div>
 
 <div class="allTheCards1">
+    <form method="post" action="" >
 
-    <?php foreach ($eggs as $egg => $value) { ?>
+        <?php foreach ($eggs as $egg => $value) { ?>
 
-        <?php
-        if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151be0' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf3' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151c09' || $eggs[$egg]['id'] == '5cac51240d488f0da6151be6' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151bcd' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bd1' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151c14' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bde' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151bd3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bdf' ||
-            $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf5') {
-            ?>
-            <div class="block_cards1">
-                <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
-                <div class="textcenter">
-                    <span> <?php echo $eggs[$egg]['name']; ?> </span>
-                    <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
-                    <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
-                </div>
-
-                <div></div>
-            </div>
             <?php
-        } ?>
+            if ($eggs[$egg]['id'] == '5cac51240d488f0da6151bed' || $eggs[$egg]['id'] == '5cac51240d488f0da6151c07' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151be0' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf3' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151c09' || $eggs[$egg]['id'] == '5cac51240d488f0da6151be6' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151bcd' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bd1' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151c14' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bde' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151bd3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bdf' ||
+                $eggs[$egg]['id'] == '5cac51240d488f0da6151be3' || $eggs[$egg]['id'] == '5cac51240d488f0da6151bf5') {
+                ?>
+                <div class="block_cards1">
+                    <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
+                    <div class="textcenter">
+                        <span> <?php echo $eggs[$egg]['name']; ?> </span>
+                        <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
+                        <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
+                    </div>
 
-    <?php } ?>
+                    <a href="?add_egg=<?= $eggs[$egg]['id']?>">Je choisis cet oeuf</a>
+
+
+
+                    <div></div>
+                </div>
+                <?php
+            } ?>
+
+        <?php } ?>
+    </form>
 
 </div>
 
