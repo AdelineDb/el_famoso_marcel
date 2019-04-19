@@ -33,10 +33,6 @@ if (!isset($_SESSION['egg'])) {
             $nbOeufs += 1;
         }
 
-        if ($nbOeufs > 4 || $nbOeufs < 4){
-            header('Location: cookingEgg.php');
-        }
-
         if (serialize($esterEgg) == serialize($_SESSION['egg'])) {
             header('Location: fin3.php');
         }
