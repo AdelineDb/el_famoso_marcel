@@ -27,7 +27,7 @@ require_once('_head.php');
         </div>
     </div>
 </section>
-<div>
+<div class="bottom">
     <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE JOUE</button></a>
 </div>
 

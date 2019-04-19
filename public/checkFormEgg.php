@@ -16,6 +16,7 @@ if (!isset($_SESSION['egg'])) {
 ?>
 <section class="cookies container-fluid">
     <div class="row">
+
         <?php echo '<pre>';
         var_dump($_SESSION['egg']);
         var_dump($esterEgg);
@@ -44,8 +45,6 @@ if (!isset($_SESSION['egg'])) {
             header('Location: fin2.php');
             }
             ?>
-
-
         </ul>
     </div>
 </section>

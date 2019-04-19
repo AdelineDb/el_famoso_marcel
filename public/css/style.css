@@ -4,6 +4,9 @@ h1 {
     font-size: 4em;
     text-align: center;
     color: #4C230A;
+    line-height: 3rem;
+    margin-top: 60px;
+
 }
 
 h2 {
@@ -11,6 +14,7 @@ h2 {
     font-size: 2.5em;
     text-align: center;
     color: #4C230A;
+    line-height: 1.5rem;
 }
 
 p, span {
@@ -52,6 +56,7 @@ button {
     margin-top: 70px;
     width: 600px;
     text-align: left !important;
+    line-height: 1em;
 }
 
 .reine {
@@ -59,6 +64,7 @@ button {
     font-weight: bold;
     margin-bottom: -20px;
 }
+
 
 /*----------------CHARACTERES------------------*/
 .perso {
@@ -103,6 +109,16 @@ button {
      margin-left: 3.5%;
      position: absolute;
  }
+.block1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.titrecard{
+    text-align: center;
+    font-size: 1em;
+}
 
 .textintro1{
     margin-top: -30px;
@@ -111,7 +127,7 @@ button {
 }
 
 .textintro2{
-    width: 70%;
+    width: 60%;
     margin-left: 25%;
 }
 .containerEggs {
@@ -144,6 +160,7 @@ button {
     color: #4C230A;
     text-align: center;
     display: block;
+    border: 1px solid red;
 }
 
 .boutonfin1 {
@@ -159,13 +176,44 @@ button {
     padding: 10px 10px;
     background-color: #C4F1BE;
     border-color: transparent;
+    text-decoration: none;
+}
+
+.textdeconone {
+    text-decoration: none;
+}
+
+.addegg {
+    text-decoration: none;
+    border: 1px solid #C4F1BE;
+    background-color: #C4F1BE;
+    color: #4C230A;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Cabin Sketch', cursive;
+    border: 1px solid blue;
+}
+
+.addegg1 {
+    text-decoration: none;
+    background-color: #B8F2E6;
+    color: #4C230A;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+
+.inputt {
+    border: 1px solid red;
 }
 
 .boutonfin1 > button:hover {
     color: #C4F1BE;
     background-color: #4C230A;
-}
+    text-decoration: none;
 
+}
 
 /*----------------FIN1------------------*/
 body.fin1 {
@@ -178,6 +226,7 @@ body.fin1 {
     flex-wrap: wrap;
     width: 80%;
     margin-left: 10%;
+    margin-top: 15px;
 }
 
 .fin1bloc2 p {
@@ -215,14 +264,6 @@ body.fin1 {
     margin-bottom: 40px;
 }
 
-/*----------------FIN2------------------*/
-.textmort{
-    display: flex;
-    flex-direction: column;
-}
-.textmort2{
-    display: flex;
-}
 
 /*----------------FIN3------------------*/
 .fin1bloc3 {

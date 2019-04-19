@@ -17,11 +17,12 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
         {
         if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
         <div class="cardjoueur">
+            <p>Ton personnage :</p>
             <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
 
             <div class="">
-                <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
-                <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+                <p class="titrecard"><?= $characters[$key]['name'] . '<br>' . $characters[$key]['origin']; ?></p>
+                </p>
             </div>
             <?php }} ?>
         </div>
@@ -29,7 +30,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     <div class="textintro1">
         <h2>Ton oeuf est parfait, la Reine est ravie !</h2>
         <div class="fin1bloc2">
-            <img src="img/cerceicontente.jpg" alt="la reine est contente" width="320px">
+            <img src="img/cerceicontente.jpg" alt="la reine est contente" width="320px" height="471px" >
             <p>Je suis satisfaite.<br/>
                 Tu gagnes ma reconnaissance et c’est déjà pas mal. Tu vas pouvoir garder ta tête.<br/>
                 Allez, salut !</p>
@@ -47,8 +48,8 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
 
     </div>
     <div class="bottom">
-        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE JOUE</button></a>
-        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
+        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE JOUE</button></a>
+        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
     </div>
 
     <a href="index.php">HOME</a>
