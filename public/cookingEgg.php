@@ -58,7 +58,7 @@ if (isset($_GET['add_egg'])) {
 <div class="textintro1">
     <h2>Maintenant crée ton oeuf parfait pour la reine</h2>
 
-    <p class="textintro2">Maintenant à toi de jouer. <br/>
+    <p class="textintro3">Maintenant à toi de jouer. <br/>
         Choisis 4 oeufs pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.`
         Tu ne vois pas les images, c'est normal... sois simplement plus malin.</p>
 </div>
