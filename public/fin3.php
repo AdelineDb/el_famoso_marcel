@@ -18,8 +18,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     </div>
 
     <div class="bottom">
-        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE JOUE</button></a>
-        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
+        <a class="boutonfin" href="index.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
     </div>
 
 
