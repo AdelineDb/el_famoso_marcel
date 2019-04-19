@@ -1,7 +1,6 @@
 <?php
-
 session_start();
-session_destroy();
+
 
 require_once('_head.php');
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
