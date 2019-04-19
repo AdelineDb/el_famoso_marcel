@@ -46,7 +46,6 @@ if (isset($_GET['add_egg'])) {
 
                 <div class="">
                     <p class="titrecard"><?= $characters[$key]['name'] . '<br>' . $characters[$key]['origin']; ?></p>
-                     </p>
                 </div>
 
             </div>
@@ -58,9 +57,9 @@ if (isset($_GET['add_egg'])) {
 <div class="textintro1">
     <h2>Maintenant crée ton oeuf parfait pour la reine</h2>
 
-    <p class="textintro3">Maintenant à toi de jouer. <br/>
-        Choisis 4 oeufs pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.`
-        Tu ne vois pas les images, c'est normal... sois simplement plus malin.</p>
+    <p class="textintro2">Maintenant à toi de jouer. <br/>
+        Choisis 4 oeufs, et uniquement 4, pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.<br/>
+        Sois le plus malin dans cette quête de l'oeuf parfait. A tes risques et périls...</p>
 </div>
 
 <div class="allTheCards1">
