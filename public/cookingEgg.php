@@ -8,7 +8,7 @@ include '../src/function.php';
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
 $allEggs = [
-    '5cac51240d488f0da6151bed',
+    '5cac51240d488f0da6151bed', // trump
     '5cac51240d488f0da6151c07',
     '5cac51240d488f0da6151be0',
     '5cac51240d488f0da6151bf3',
@@ -18,9 +18,9 @@ $allEggs = [
     '5cac51240d488f0da6151bd1',
     '5cac51240d488f0da6151c14',
     '5cac51240d488f0da6151bde',
-    '5cac51240d488f0da6151bd3',
-    '5cac51240d488f0da6151bdf',
-    '5cac51240d488f0da6151be3',
+    '5cac51240d488f0da6151bd3', // trump
+    '5cac51240d488f0da6151bdf', // trump
+    '5cac51240d488f0da6151be3', // trump
     '5cac51240d488f0da6151bf5'];
 
 if (isset($_GET['add_egg'])){
