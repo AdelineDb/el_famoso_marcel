@@ -4,6 +4,9 @@ h1 {
     font-size: 4em;
     text-align: center;
     color: #4C230A;
+    line-height: 3rem;
+    margin-top: 60px;
+
 }
 
 h2 {
@@ -11,6 +14,7 @@ h2 {
     font-size: 2.5em;
     text-align: center;
     color: #4C230A;
+    line-height: 1.5rem;
 }
 
 p, span {
@@ -103,6 +107,16 @@ button {
      margin-left: 3.5%;
      position: absolute;
  }
+.block1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.titrecard{
+    text-align: center;
+    font-size: 1em;
+}
 
 .textintro1{
     margin-top: -30px;
@@ -209,6 +223,7 @@ body.fin1 {
     flex-wrap: wrap;
     width: 80%;
     margin-left: 10%;
+    margin-top: 15px;
 }
 
 .fin1bloc2 p {
@@ -246,14 +261,6 @@ body.fin1 {
     margin-bottom: 40px;
 }
 
-/*----------------FIN2------------------*/
-.textmort{
-    display: flex;
-    flex-direction: column;
-}
-.textmort2{
-    display: flex;
-}
 
 /*----------------FIN3------------------*/
 .fin1bloc3 {

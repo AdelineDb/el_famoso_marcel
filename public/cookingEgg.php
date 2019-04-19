@@ -40,13 +40,13 @@ if (isset($_GET['add_egg'])) {
 
     <?php foreach ($characters as $key => $character) {
         if ($characters[$key]['name'] == $_SESSION['hero']) { ?>
-            <div class="block_cards block1">
+            <div class="block1">
 
                 <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
 
                 <div class="">
-                    <p class="titreCards"><?php echo $characters[$key]['name']; ?></p>
-                    <p class="descriptionCards"><?php echo $characters[$key]['origin']; ?></p>
+                    <p class="titrecard"><?= $characters[$key]['name'] . '<br>' . $characters[$key]['origin']; ?></p>
+                     </p>
                 </div>
 
             </div>
