@@ -4,8 +4,8 @@ h1 {
     font-size: 4em;
     text-align: center;
     color: #4C230A;
-    line-height: 3rem;
-    margin-top: 60px;
+    line-height: 2.5rem;
+    margin-top: 40px;
 
 }
 
@@ -146,7 +146,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 40px 30px;
+    margin: 40px 50px;
 }
 
 .block_cards1 img {
