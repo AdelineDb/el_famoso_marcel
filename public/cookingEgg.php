@@ -72,7 +72,7 @@ var_dump($_SESSION['hero']); ?>
 </div>
 
 <div class="boutonfin1">
-    <button type="submit" formaction="#" formtarget="_self">JE CRÉE L’OEUF</button>
+    <button type="submit" formaction="fin1.php" formtarget="_self">JE CRÉE L’OEUF</button>
 </div>
 
 
