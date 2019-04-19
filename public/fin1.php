@@ -28,7 +28,7 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     <div class="textintro1">
         <h2>Ton oeuf est parfait, la Reine est ravie !</h2>
         <div class="fin1bloc2">
-            <img src="img/cerceicontente.jpg" alt="la reine est contente" width="320px">
+            <img src="img/cerceicontente.jpg" alt="la reine est contente" width="320px" height="471px" >
             <p>Je suis satisfaite.<br/>
                 Tu gagnes ma reconnaissance et c’est déjà pas mal. Tu vas pouvoir garder ta tête.<br/>
                 Allez, salut !</p>
