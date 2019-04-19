@@ -1,10 +1,9 @@
 <?php
-
 session_start();
 
 require_once('_head.php');
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
-
+$eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 ?>
 <body class="fin1">
 
@@ -38,10 +37,14 @@ $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/
     </div>
 
     <div class="cardoeuffin1bloc1">
-        <p>Card1</p>
-        <p>Card2</p>
-        <p>Card3</p>
-        <p>Card4</p>
+        <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
+        <p><div class="block_cards1">
+            <img class="hoverimg" src="<?php echo $eggs[$egg]['image']; ?>" alt="oeuf" width="210px" height="220px">
+            <div class="textcenter">
+                <span> <?php echo $eggs[$egg]['name']; ?> </span>
+
+            </div></p>
+        <?php } ?>
 
     </div>
     <div class="bottom">

@@ -6,6 +6,7 @@ include '../src/function.php';
 
 $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eggs"), true);
 $characters = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/characters"), true);
+
 $allEggs = [
     '5cac51240d488f0da6151bed', // trump
     '5cac51240d488f0da6151c07',
