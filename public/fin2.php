@@ -15,6 +15,7 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
         {
         if ($characters[$key]['name'] == $_SESSION['hero']){ ?>
         <div class="cardjoueur">
+            <p>Ton personnage :</p>
             <img src="<?php echo $characters[$key]['image']; ?>" width="120px" "alt="">
 
             <div class="">
@@ -51,8 +52,8 @@ $eggs = json_decode(file_get_contents("http://easteregg.wildcodeschool.fr/api/eg
 
     </div>
     <div class="bottom">
-        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE JOUE</button></a>
-        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
+        <a class="boutonfin" href="cookingEgg.php"><button type="submit">JE JOUE</button></a>
+        <a class="boutonfin" href="choixPersonnage.php"><button type="submit">JE CHANGE DE PERSONNAGE</button></a>
     </div>
 
     <a href="index.php">HOME</a>

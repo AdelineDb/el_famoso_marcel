@@ -37,12 +37,13 @@ if (isset($_GET['add_egg'])) {
 
 <h1>EASTER COOK FOR THE QUEEN</h1>
 
-<div class="cardjoueur">
+<div class="block1 ">
 
     <?php foreach ($characters as $key => $character) {
 
         if ($characters[$key]['name'] == $_SESSION['hero']) { ?>
-            <div class="block1">
+            <div class="cardjoueur">
+                <p>Ton personnage :</p>
                 <img src="<?php echo $characters[$key]['image']; ?>" width="120px" alt="">
 
                 <div class="">
