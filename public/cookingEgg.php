@@ -102,7 +102,7 @@ if (isset($_GET['add_egg'])) {
     <a class="boutonfin1 textdeconone" href="checkFormEgg.php">
         <button type="submit">JE CRÉE L'OEUF</button>
     </a>
-    <a class="boutonfin" href="index.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
+    <a class="boutonfin1 marg" href="index.php"><button type="submit">JE REVIENS AU DÉBUT</button></a>
 </div>
 
 <a href="index.php">HOME</a>

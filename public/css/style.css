@@ -207,15 +207,16 @@ button {
 
 }
 
-.inputt {
-    border: 1px solid red;
-}
-
 .boutonfin1 > button:hover {
     color: #C4F1BE;
     background-color: #4C230A;
     text-decoration: none;
 
+}
+
+.marg{
+    margin-top: -50px;
+    text-decoration: none;
 }
 
 /*----------------FIN1------------------*/
