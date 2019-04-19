@@ -13,13 +13,7 @@ $esterEgg = [
 if (!isset($_SESSION['egg'])) {
     header('Location: index.php');
 }
-?>
-<section class="cookies container-fluid">
-    <div class="row">
-
-        <?php
         $succes = 0;
-
 
         ksort($esterEgg);
         ksort($_SESSION['egg']);
@@ -46,9 +40,9 @@ if (!isset($_SESSION['egg'])) {
         if (serialize($esterEgg) == serialize($_SESSION['egg'])) {
             header('Location: fin3.php');
         }
+
         ?>
-    </div>
-</section>
+
 
 
 

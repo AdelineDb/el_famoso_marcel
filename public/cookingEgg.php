@@ -62,6 +62,7 @@ if (isset($_GET['add_egg'])) {
     <p class="textintro2">Maintenant à toi de jouer. <br/>
         Choisis 4 oeufs, et uniquement 4, pour créer le mélange parfait qui créera l'oeuf parfait que la Reine attend de toi.<br/>
         Sois le plus malin dans cette quête de l'oeuf parfait. A tes risques et périls...</p>
+
 </div>
 
 <div class="allTheCards1">
@@ -82,11 +83,12 @@ if (isset($_GET['add_egg'])) {
                 <span> <?php echo $eggs[$egg]['name']; ?> </span>
                 <span> <?php echo 'Calibre ' . $eggs[$egg]['caliber']; ?> </span>
                 <span> <?php echo farming($eggs[$egg]['farming']); ?> </span>
-
-                <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
-                    <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Oeuf sélectionné</a>
-                <?php } else { ?>
-                    <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
+                <?php if( !isset($_SESSION['egg']) || count($_SESSION['egg']) <= 4){ ?>
+                    <?php if ((isset($_SESSION['egg']) && (key_exists($eggs[$egg]['id'], $_SESSION['egg'])))) { ?>
+                        <a class="addegg" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Oeuf sélectionné</a>
+                    <?php } else { ?>
+                        <a class="addegg1" href="?add_egg=<?= $eggs[$egg]['id'] ?>">Je choisis cet oeuf</a>
+                    <?php } ?>
                 <?php } ?>
             </div>
 
