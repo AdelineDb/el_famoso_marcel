@@ -1,0 +1,284 @@
+/*----------------GENERAL------------------*/
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4em;
+    text-align: center;
+    color: #4C230A;
+    line-height: 2.5rem;
+    margin-top: 40px;
+
+}
+
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: #4C230A;
+    line-height: 1.5rem;
+}
+
+p, span {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+    color: #4C230A;
+}
+
+button {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1.5em;
+    color: #4C230A;
+    margin-top: 20px;
+
+}
+
+/*----------------INDEX------------------*/
+.home {
+    background-color: #C4F1BE;
+}
+
+.hometaille {
+    width: 85%;
+    margin: 60px auto 5px;
+}
+
+.central-home {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cersei-center {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.home-intro {
+    margin-top: 70px;
+    width: 600px;
+    text-align: left !important;
+    line-height: 1em;
+}
+
+.reine {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+
+/*----------------CHARACTERES------------------*/
+.perso {
+    background-color: #B8F2E6;
+}
+
+.allTheCards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titreCards {
+    text-align: center;
+    margin-top: 0;
+    margin-left: -5px;
+}
+
+.descriptionCards {
+    text-align: center;
+    margin-top: -25px;
+    font-size: 1.3em;
+}
+
+.radio {
+    width: 300px;
+    margin: 10px auto;
+    padding-left: 120px;
+}
+
+.label-radio{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1em;
+}
+
+/*----------------OEUFS------------------*/
+.cardjoueur{
+    position: relative;
+}
+ .block1{
+     margin-left: 3.5%;
+     position: absolute;
+ }
+.block1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.titrecard{
+    text-align: center;
+    font-size: 1em;
+}
+
+.textintro1{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textintro2{
+    width: 60%;
+    margin-left: 25%;
+}
+.containerEggs {
+    background-color: #FFD387;
+}
+
+.allTheCards1 {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.block_cards1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 50px;
+}
+
+.block_cards1 img {
+    margin-bottom: 20px;
+}
+
+.textcenter > span {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 1em;
+    color: #4C230A;
+    text-align: center;
+    display: block;
+    width: 210px
+}
+
+.boutonfin1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.boutonfin1 > button {
+    margin-top: 20px;
+    width: 380px;
+    padding: 10px 10px;
+    background-color: #C4F1BE;
+    border-color: transparent;
+    text-decoration: none;
+}
+
+.textdeconone {
+    text-decoration: none;
+}
+
+.addegg {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4C230A;
+    color: #B8F2E6;
+    width: 190px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+
+.addegg1 {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #C4F1BE;
+    color: #4C230A;
+    width: 190px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+
+}
+
+.boutonfin1 > button:hover {
+    color: #C4F1BE;
+    background-color: #4C230A;
+    text-decoration: none;
+    transition: .4s;
+
+}
+
+.marg{
+    margin-top: -50px;
+    text-decoration: none;
+}
+
+/*----------------FIN1------------------*/
+body.fin1 {
+    background-color: #C4F1BE;
+}
+
+.fin1bloc2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+.fin1bloc2 p {
+    margin-top: 80px;
+    width: 350px;
+}
+
+.cardoeuffin1bloc1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.boutonfin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.boutonfin > button {
+    margin-top: 20px;
+    width: 380px;
+    padding: 10px 10px;
+    background-color: #FFD387;
+    border-color: transparent;
+}
+
+.boutonfin > button:hover {
+    color: #FFD387;
+    background-color: #4C230A;
+    transition: .4s;
+}
+.bottom{
+     margin-bottom: 40px;
+ }
+
+.bottom1{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+
+/*----------------FIN3------------------*/
+.fin1bloc3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
