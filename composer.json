@@ -1,0 +1,12 @@
+{
+    "name": "auzou/el_famoso_marcel",
+    "authors": [
+        {
+            "name": "Arnaud Auzou",
+            "email": "arnaud.auzoudm@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
