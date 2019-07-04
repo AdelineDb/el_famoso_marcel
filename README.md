@@ -1,3 +1,3 @@
 Hackathon Wild code Schoool. 
-Sujet Paques
-Il faut un easter egg. 
+
+Sujet Paques : construire une application à partir d'une API
